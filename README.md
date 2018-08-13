@@ -4,7 +4,7 @@
 
 [![N|Solid](https://nodei.co/npm/discord.js.png?downloads=true&stars=true)](https://www.npmjs.org/package/discord.js)
 
-#How to start
+# How to start
 
 You need [Node.js](https://nodejs.org/) v8+ to run the bot.
 
@@ -16,10 +16,8 @@ $ node index.js
 ```
 And you are good to go!
 
-# Hazmi35
-
-
 # Usefull resources
 - [Discord.js Documentation](https://discord.js.org/#/docs)
 - [Node.js docs](https://nodejs.org/en/docs/)
 
+thanks. - Hazmi35
