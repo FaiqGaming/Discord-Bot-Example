@@ -6,7 +6,7 @@
 
 # How to start
 
-You need [Node.js](https://nodejs.org/) v8+ to run the bot.
+You need [Node.js](https://nodejs.org/) version 8.x (8+) to run the bot.
 
 Head to the bot directory and then simply run :
 ```sh
