@@ -4,7 +4,8 @@
   "description": "Discord.js Example bot by : Hazmi35",
   "main": "index.js",
   "scripts": {
-    "test": "echo WORKING!"
+    "test": "echo WORKING!",
+	"start": "node index.js"
   },
   "keywords": [
     "Nodejs",
@@ -14,6 +15,9 @@
     "Discord BOT",
     "BOT"
   ],
+  "repository": {
+    "url": "https://github.com/Hazmi35/Discord-Bot-Example.git"
+  },
   "author": "Hazmi35",
   "license": "MIT",
   "dependencies": {
