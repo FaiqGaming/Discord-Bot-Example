@@ -1,0 +1,23 @@
+{
+  "name": "example-bot",
+  "version": "1.1.0",
+  "description": "Discord.js Example bot by : Hazmi35",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo WORKING!"
+  },
+  "keywords": [
+    "Nodejs",
+    "Node.js",
+    "Discordjs",
+    "Discord.js",
+    "Discord BOT",
+    "BOT"
+  ],
+  "author": "Hazmi35",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "discord.js": "^11.3.2"
+  }
+}
