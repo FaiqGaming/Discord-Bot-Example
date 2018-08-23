@@ -1,23 +1,31 @@
 # Discord Bot Example
-[![N|Solid](https://img.shields.io/npm/v/discord.js.svg?maxAge=3600)](https://nodejs.org/en/)
-[![N|Solid](https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600)](https://discord.js.org)
 
 [![N|Solid](https://nodei.co/npm/discord.js.png?downloads=true&stars=true)](https://www.npmjs.org/package/discord.js)
 
-# How to start
+# Features
+
+# How to run the bot
 
 You need [Node.js](https://nodejs.org/) version 8.x (8+) to run the bot.
 
 Head to the bot directory and then simply run :
+
+## Executing
+
+### From the terminal
 ```sh
 $ npm i -S
-# and then
 $ node index.js
 ```
-And you are good to go!
+
+### From the bat file
+
+Just run the `runbot.bat`
 
 # Usefull resources
+- [Discord Bots Indonesia Server](https://discord.gg/vgejeZB)
 - [Discord.js Documentation](https://discord.js.org/#/docs)
 - [Node.js docs](https://nodejs.org/en/docs/)
 
-thanks. - Hazmi35
+thanks. 
+Hazmi35
