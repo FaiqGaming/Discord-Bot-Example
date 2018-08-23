@@ -1,13 +1,13 @@
-//IMPORTING MODULES...
+// Import module
 const Discord = require("discord.js"); 
 const chalk = require("chalk"); 
-const config = require("./config.json");
+const config = require("config.json");
 
-var bot = new Discord.Client(); //Variable to Discord.Client();
+const bot = new Discord.Client(); // Interpets 'bot' as Discord Bot Client
 
-bot.on("ready", () => { //Ready Event
-    //Actually, i can't say anything to this code xd
-    var statusType = config.statusType.toString().toLocaleUpperCase();
+bot.on("ready", () => {
+    // This code block should run after the bot has boot up
+    var statusType = config.statusType.toString().toLocaleUpperCase(); // Get the StatusType String from config.json
     if (!statusType) {
         console.warn(chalk.bold.yellow("WARN :") + ' Status type has not been set, automatically using "PLAYING" status type');
         statusType = "PLAYING"
@@ -26,23 +26,23 @@ bot.on("ready", () => { //Ready Event
     console.log(`--------------CONFIG--------------\nLogged in as : ${bot.user.tag}\nPrefix : ${config.prefix}\nPlaying status : ${config.playingStatus}\nStatus type : ${statusType}\n----------------------------------`)
 });
 
-bot.on("message", async message => { //message event
-    var PREFIX = config.prefix //Get the prefix from config.json
+bot.on("message", async message => { // Code block below will run when the bots receive message(s)
+    var PREFIX = config.prefix // prefix imported from config.json
 
-    var args = message.content.substring(PREFIX.length).split(" "); //args...
+    var args = message.content.substring(PREFIX.length).split(" "); // 
 
-    if (!message.content.startsWith(PREFIX)) return; //If the message doesn't start with prefix, it will be ignored
+    if (!message.content.startsWith(PREFIX)) return; // Message doesn't start with prefix will be ignored
 
-    var command = args[0].toString(); //hmmmmm
+    var command = args[0].toString(); // Interpets args as string then define it as 'command'
 
-    var cmd = command.toLocaleLowerCase(); //variable to command that users type
+    var cmd = command.toLocaleLowerCase(); // Make args as lowercase, will be rad uppercase as lowercase
 
-    var sender = { //just a shortcut to message.author and message.member...
+    var sender = { // Define Discord Message object to shorter one.
         user: message.author,
         member: message.member
     }
-    try { //BEGINS CODE OF COMMANDS
-        if (cmd === 'ping') { //PING PONG!
+    try { // Commands Code block
+        if (cmd === 'ping') { // 'PING' command, Execute it using ':prefix:ping'
             var start = message.createdTimestamp;
             message.channel.send("Pong!").then(m => {
                 var latency = Date.now() - start
@@ -51,15 +51,15 @@ bot.on("message", async message => { //message event
             });
             return;
         }
-        if (cmd === 'beep') { //BEEP BOOP!
+        if (cmd === 'beep') { // 'BEEP' command, Execute it using ':prefix:beep'
             message.channel.send("boop")
             return;
         }
-        if (cmd === 'hello') { //HELLO THERE
+        if (cmd === 'hello') { // 'HELLO' command, Execute it using ':prefix:hello'
             message.channel.send("hi")
             return;
         }
-        if (cmd === 'avatar') { //SIMPLE AVATAR COMMAND (with embed)
+        if (cmd === 'avatar') { // 'SHOW USER AVATAR' command, Execute it using ':prefix:ping' . Embed Supported
             var member = message.mentions.members.first() || message.guild.members.get(args[1]);
             if (!member) {
                 var embed = new Discord.RichEmbed()
@@ -79,13 +79,15 @@ bot.on("message", async message => { //message event
             return;
         }
     } catch (err) {
-        console.error(err); //catching error
+        console.error(err); // Send error to the console
     } finally {
-        console.log(`${message.author.tag} is using ${cmd} command`); //....
+        console.log(`${message.author.tag} is using ${cmd} command`); // Executed commands will show at console log.
     }
 });
 
-bot.login(config.token); //TOKEN IS A SECRET THING!
-// PLEASE AND PLEASE DO NOT SHARE YOUR TOKEN.
-
-//END OF CODE.
+bot.login(config.token); 
+/* 
+ * TOKEN IS A SECRET THING!
+ * DO NOT SHARE YOUR TOKEN
+ *
+ */
