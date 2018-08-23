@@ -1,23 +1,56 @@
 # Discord Bot Example
-[![N|Solid](https://img.shields.io/npm/v/discord.js.svg?maxAge=3600)](https://nodejs.org/en/)
-[![N|Solid](https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600)](https://discord.js.org)
 
 [![N|Solid](https://nodei.co/npm/discord.js.png?downloads=true&stars=true)](https://www.npmjs.org/package/discord.js)
 
-# How to start
+# Features
 
-You need [Node.js](https://nodejs.org/) version 8.x (8+) to run the bot.
+1. Ping commands
+2. Beep Boop Commands
+3. Simple code block
+4. Click and Run bot
 
-Head to the bot directory and then simply run :
+
+# How to run the bot
+
+## Presequites
+
+1. [Node.js](https://nodejs.org/) version 8.x (LTS) recomended.
+2. Text Editor application. For editing config file and other simple edit. [VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io) would be prefered.
+3. CMD or Similar application like [powershell](https://docs.microsoft.com/en-us/powershell/), [bash](https://www.gnu.org/software/bash), and other.
+
+## Installing
+
+1. Clone this repository or download as zip, then extract it.
+2. Open the bot directry and fire up a *teminal*.
+3. Send `npm install -S` to the terminal and wait it finish.
+4. Rename `config.json.example` to `config.json`
+5. Open `config.json` then change the content properly and save it.
+6. You are ready to go!
+
+## Executing
+
+### From the terminal
+
+1. Direct node execution
 ```sh
-$ npm i -S
-# and then
 $ node index.js
 ```
-And you are good to go!
+
+2. NPM Execution
+```sh
+$ npm start
+```
+
+These code will work on windows too
+
+### From the bat file
+
+Just run the `runbot.bat`
 
 # Usefull resources
+- [Discord Bots Indonesia Server](https://discord.gg/vgejeZB)
 - [Discord.js Documentation](https://discord.js.org/#/docs)
 - [Node.js docs](https://nodejs.org/en/docs/)
 
-thanks. - Hazmi35
+Thanks
+Hazmi35
