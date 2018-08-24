@@ -1,4 +1,4 @@
-# Discord Bot Example
+# Discord Bot Example (Sharding Part)
 
 [![N|Solid](https://nodei.co/npm/discord.js.png?downloads=true&stars=true)](https://www.npmjs.org/package/discord.js)
 
@@ -47,10 +47,12 @@ These code will work on windows too
 
 Just run the `runbot.bat`
 
+### Another Example
+- [Sharding Example](https://github.com/Hazmi35/Discord-Bot-Example/tree/shard)
+
 # Usefull resources
-- [Discord Bots Indonesia Server](https://discord.gg/vgejeZB)
 - [Discord.js Documentation](https://discord.js.org/#/docs)
 - [Node.js docs](https://nodejs.org/en/docs/)
 
-Thanks
+Thanks.
 Hazmi35
