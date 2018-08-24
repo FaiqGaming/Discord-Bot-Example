@@ -54,5 +54,5 @@ Just run the `runbot.bat`
 - [Discord.js Documentation](https://discord.js.org/#/docs)
 - [Node.js docs](https://nodejs.org/en/docs/)
 
-Thanks
+Thanks.
 Hazmi35
