@@ -1,7 +1,7 @@
 // Import module
 const Discord = require("discord.js"); 
 const chalk = require("chalk"); 
-const config = require("config.json");
+const config = require("./config.json");
 
 const bot = new Discord.Client(); // Interpets 'bot' as Discord Bot Client
 
