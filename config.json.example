@@ -2,6 +2,5 @@
     "token": "your_super_secret_token",
     "prefix": "your_super_cool_prefix",
     "playingStatus": "type_here_your_playing_status",
-    "statusType": "choose_your_status_type",
-	"totalShards": "amount_of_shard"
+    "statusType": "choose_your_status_type"
 }
