@@ -1,4 +1,4 @@
-# Discord Bot Example (Sharding Part)
+# Discord Bot Example
 
 [![N|Solid](https://nodei.co/npm/discord.js.png?downloads=true&stars=true)](https://www.npmjs.org/package/discord.js)
 
