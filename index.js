@@ -23,7 +23,7 @@ bot.on("ready", () => {
     bot.user.setActivity(config.playingStatus, {
         type: statusType
     });
-    console.log(`--------------CONFIG--------------\nLogged in as : ${bot.user.tag}\nPrefix : ${config.prefix}\nPlaying status : ${config.playingStatus}\nStatus type : ${statusType}\n----------------------------------`)
+    console.log(`--------------CONFIG--------------\nLogged in as : ${bot.user.tag}\nPrefix : ${config.prefix}\nPlaying status : ${config.playingStatus}\nStatus type : ${statusType}\nTotal Shards : ${config.totalShards}\n----------------------------------`)
 });
 
 bot.on("message", async message => { // Code block below will run when the bots receive message(s)
