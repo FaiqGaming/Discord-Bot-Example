@@ -1,7 +1,8 @@
 const { ShardingManager } = require('discord.js'); //IMPORT MODULES
 const config = require("./config.json");
+const packageJsonFile = require("./package.json");
 
-const shards = new ShardingManager('./aoyama-nanami-bot.js', {
+const shards = new ShardingManager(`./${packageJsonFile.main}`, {
     token: config.token,
     totalShards: config.totalShards
 });
