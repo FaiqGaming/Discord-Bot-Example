@@ -4,7 +4,7 @@ const packageJsonFile = require("./package.json");
 
 const shards = new ShardingManager(`./${packageJsonFile.main}`, {
     token: config.token,
-    totalShards: config.totalShards
+    totalShards: Number(config.totalShards)
 });
 
 shards.on('launch', shard => {
