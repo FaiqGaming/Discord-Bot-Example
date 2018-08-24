@@ -48,7 +48,7 @@ These code will work on windows too
 Just run the `runbot.bat`
 
 ### Another Example
-[Sharding Example](https://github.com/Hazmi35/Discord-Bot-Example/tree/shard)
+- [Sharding Example](https://github.com/Hazmi35/Discord-Bot-Example/tree/shard)
 
 # Usefull resources
 - [Discord.js Documentation](https://discord.js.org/#/docs)
